@@ -66,4 +66,4 @@ export const isValid = Value.Check
 export type {
   Static,
   TSchema as TypeSchema,
-} from 'https://deno.land/x/typebox@0.25.24/src/typebox.ts'
+} from 'https://esm.sh/@sinclair/typebox@0.25.24?pin=v110'
