@@ -42,11 +42,11 @@ import {
   TUnsafe,
   UnionStringLiteralToTuple,
   UnsafeOptions,
-} from 'https://deno.land/x/typebox@0.25.24/src/typebox.ts'
+} from 'https://esm.sh/@sinclair/typebox@0.25.24?pin=v110'
 // @deno-types='https://cdn.jsdelivr.net/npm/bson@5.0.1/bson.d.ts'
 import { ObjectId as _ObjectId } from 'https://cdn.jsdelivr.net/npm/bson@5.0.1/+esm'
-import { Custom } from 'https://deno.land/x/typebox@0.25.24/src/custom/custom.ts'
-import { TypeSystemDuplicateTypeKind } from 'https://deno.land/x/typebox@0.25.24/src/system/system.ts'
+import { Custom } from 'https://esm.sh/@sinclair/typebox@0.25.24/custom?pin=v110'
+import { TypeSystemDuplicateTypeKind } from 'https://esm.sh/@sinclair/typebox@0.25.24/system?pin=v110'
 
 let TypeOrdinal = 0
 

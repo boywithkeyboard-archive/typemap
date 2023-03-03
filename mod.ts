@@ -59,7 +59,7 @@ export default {
   union: Union,
 }
 
-import { Value } from 'https://deno.land/x/typebox@0.25.24/src/value/value.ts'
+import { Value } from 'https://esm.sh/@sinclair/typebox@0.25.24/value?pin=v110'
 
 export const isValid = Value.Check
 
