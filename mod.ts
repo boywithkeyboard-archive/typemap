@@ -59,7 +59,9 @@ export default {
   union: Union,
 }
 
-import { Value } from 'https://esm.sh/@sinclair/typebox@0.25.24/value?pin=v110'
+export { ObjectId } from 'https://raw.githubusercontent.com/mongodb/js-bson/v5.0.1/src/objectid.ts'
+
+import { Value } from 'https://cdn.skypack.dev/@sinclair/typebox@0.25.24/value?dts'
 
 export const isValid = Value.Check
 

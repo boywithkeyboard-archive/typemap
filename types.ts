@@ -43,10 +43,9 @@ import {
   UnionStringLiteralToTuple,
   UnsafeOptions,
 } from 'https://esm.sh/@sinclair/typebox@0.25.24?pin=v110'
-// @deno-types='https://cdn.jsdelivr.net/npm/bson@5.0.1/bson.d.ts'
-import { ObjectId as _ObjectId } from 'https://cdn.jsdelivr.net/npm/bson@5.0.1/+esm'
-import { Custom } from 'https://esm.sh/@sinclair/typebox@0.25.24/custom?pin=v110'
-import { TypeSystemDuplicateTypeKind } from 'https://esm.sh/@sinclair/typebox@0.25.24/system?pin=v110'
+import { ObjectId as _ObjectId } from 'https://raw.githubusercontent.com/mongodb/js-bson/v5.0.1/src/objectid.ts'
+import { Custom } from 'https://cdn.skypack.dev/@sinclair/typebox@0.25.24/custom?dts'
+import { TypeSystemDuplicateTypeKind } from 'https://cdn.skypack.dev/@sinclair/typebox@0.25.24/system?dts'
 
 let TypeOrdinal = 0
 
