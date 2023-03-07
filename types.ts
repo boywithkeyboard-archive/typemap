@@ -48,8 +48,6 @@ import {
 import { ObjectId as _ObjectId } from 'https://cdn.jsdelivr.net/npm/bson@5.0.1/+esm'
 // @deno-types='https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/custom/custom.d.ts'
 import { Custom } from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/custom/custom.js/+esm'
-// @deno-types='https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/system/system.d.ts'
-import { TypeSystemDuplicateTypeKind } from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/system/system.js/+esm'
 
 let TypeOrdinal = 0
 
@@ -408,7 +406,7 @@ function createType<Type, Options = object>(
   kind: string,
   callback: (options: Options, value: unknown) => boolean,
 ) {
-  if (Custom.Has(kind)) throw new TypeSystemDuplicateTypeKind(kind)
+  if (Custom.Has(kind)) throw new Error(`duplicate type: ${kind}`)
   Custom.Set(kind, callback)
   return (options: Partial<Options> = {}) =>
     Unsafe<Type>({ ...options, [Kind]: kind })
