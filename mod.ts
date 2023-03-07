@@ -59,10 +59,18 @@ export default {
   union: Union,
 }
 
-import { Value } from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/value/value.js/+esm'
-import type { Static, TSchema } from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/typebox.d.ts'
+export { ObjectId } from './ObjectId.ts'
 
-export const isValid = Value.Check as <T extends TSchema>(schema: T, value: unknown) => value is Static<T>
+import { Value } from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/value/value.js/+esm'
+import type {
+  Static,
+  TSchema,
+} from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/typebox.d.ts'
+
+export const isValid = Value.Check as <T extends TSchema>(
+  schema: T,
+  value: unknown,
+) => value is Static<T>
 
 export type {
   Static,
