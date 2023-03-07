@@ -1,4 +1,5 @@
 // deno-lint-ignore-file no-explicit-any
+// @deno-types='https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/typebox.d.ts'
 import {
   ArrayOptions,
   DateOptions,
@@ -42,10 +43,13 @@ import {
   TUnsafe,
   UnionStringLiteralToTuple,
   UnsafeOptions,
-} from 'https://esm.sh/@sinclair/typebox@0.25.24?pin=v110'
-import { ObjectId as _ObjectId } from 'https://raw.githubusercontent.com/mongodb/js-bson/v5.0.1/src/objectid.ts'
-import { Custom } from 'https://cdn.skypack.dev/@sinclair/typebox@0.25.24/custom?dts'
-import { TypeSystemDuplicateTypeKind } from 'https://cdn.skypack.dev/@sinclair/typebox@0.25.24/system?dts'
+} from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/typebox.js/+esm'
+// @deno-types='https://cdn.jsdelivr.net/npm/bson@5.0.1/bson.d.ts'
+import { ObjectId as _ObjectId } from 'https://cdn.jsdelivr.net/npm/bson@5.0.1/+esm'
+// @deno-types='https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/custom/custom.d.ts'
+import { Custom } from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/custom/custom.js/+esm'
+// @deno-types='https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/system/system.d.ts'
+import { TypeSystemDuplicateTypeKind } from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/system/system.js/+esm'
 
 let TypeOrdinal = 0
 

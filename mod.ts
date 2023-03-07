@@ -59,13 +59,15 @@ export default {
   union: Union,
 }
 
-export { ObjectId } from 'https://raw.githubusercontent.com/mongodb/js-bson/v5.0.1/src/objectid.ts'
+// @deno-types='https://cdn.jsdelivr.net/npm/bson@5.0.1/bson.d.ts'
+export { ObjectId } from 'https://cdn.jsdelivr.net/npm/bson@5.0.1/+esm'
 
-import { Value } from 'https://cdn.skypack.dev/@sinclair/typebox@0.25.24/value?dts'
+// @deno-types='https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/value/value.d.ts'
+import { Value } from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/value/value.js/+esm'
 
 export const isValid = Value.Check
 
 export type {
   Static,
   TSchema as TypeSchema,
-} from 'https://esm.sh/@sinclair/typebox@0.25.24?pin=v110'
+} from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/typebox.d.ts'
