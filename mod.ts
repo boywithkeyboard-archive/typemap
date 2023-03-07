@@ -62,10 +62,10 @@ export default {
 // @deno-types='https://cdn.jsdelivr.net/npm/bson@5.0.1/bson.d.ts'
 export { ObjectId } from 'https://cdn.jsdelivr.net/npm/bson@5.0.1/+esm'
 
-// @deno-types='https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/value/value.d.ts'
 import { Value } from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/value/value.js/+esm'
+import type { Static, TSchema } from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/typebox.d.ts'
 
-export const isValid = Value.Check
+export const isValid = Value.Check as <T extends TSchema, R extends TSchema[]>(schema: T, references: [...R], value: unknown) => value is Static<T>
 
 export type {
   Static,
