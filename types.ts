@@ -44,8 +44,7 @@ import {
   UnionStringLiteralToTuple,
   UnsafeOptions,
 } from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/typebox.js/+esm'
-// @deno-types='https://cdn.jsdelivr.net/npm/bson@5.0.1/bson.d.ts'
-import { ObjectId as _ObjectId } from 'https://cdn.jsdelivr.net/npm/bson@5.0.1/+esm'
+import { ObjectId as _ObjectId } from 'https://cdn.skypack.dev/bson@v5.0.1?dts'
 // @deno-types='https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/custom/custom.d.ts'
 import { Custom } from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/custom/custom.js/+esm'
 
