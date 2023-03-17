@@ -59,8 +59,6 @@ export default {
   union: Union,
 }
 
-export { ObjectId } from './ObjectId.ts'
-
 import { Value } from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/value/value.js/+esm'
 import type {
   Static,
