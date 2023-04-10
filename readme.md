@@ -1,19 +1,21 @@
 ## typemap
 
 ```ts
-import { isValid, v } from 'https://deno.land/x/typemap@v0.1.11/mod.ts'
-import type {
-  Static,
-  TypeSchema,
-} from 'https://deno.land/x/typemap@v0.1.11/mod.ts'
+import { v } from 'https://deno.land/x/typemap@v0.2.0/mod.ts'
+import type { Static, Schema } from 'https://deno.land/x/typemap@v0.2.0/mod.ts'
 
 const schema = v.object({
-  key: v.literal('value'),
+  key: v.literal('value')
 })
 
-const value = {
-  key: 'value',
+const valid = {
+  key: 'value'
 }
 
-console.log(isValid(schema, value)) // true
+const invalid = {
+  key: 'key'
+}
+
+console.log(v(schema, valid)) // true
+console.log(v(schema, invalid)) // false
 ```
