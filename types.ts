@@ -1,5 +1,5 @@
 // deno-lint-ignore-file no-explicit-any
-// @deno-types='https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/typebox.d.ts'
+// @deno-types='https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.27.1/typebox.d.ts'
 import {
   ArrayOptions,
   DateOptions,
@@ -43,10 +43,10 @@ import {
   TUnsafe,
   UnionStringLiteralToTuple,
   UnsafeOptions,
-} from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/typebox.js/+esm'
+} from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.27.1/typebox.js/+esm'
 import { ObjectId as _ObjectId } from 'https://deno.land/x/realm@v0.1.1/mod.ts'
-// @deno-types='https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/custom/custom.d.ts'
-import { Custom } from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/custom/custom.js/+esm'
+// @deno-types='https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.27.1/custom/custom.d.ts'
+import { Custom } from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.27.1/custom/custom.js/+esm'
 
 let TypeOrdinal = 0
 

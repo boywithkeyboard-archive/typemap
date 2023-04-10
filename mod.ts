@@ -59,11 +59,11 @@ export default {
   union: Union,
 }
 
-import { Value } from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/value/value.js/+esm'
+import { Value } from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.27.1/value/value.js/+esm'
 import type {
   Static,
   TSchema,
-} from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/typebox.d.ts'
+} from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.27.1/typebox.d.ts'
 
 export const isValid = Value.Check as <T extends TSchema>(
   schema: T,
@@ -73,4 +73,4 @@ export const isValid = Value.Check as <T extends TSchema>(
 export type {
   Static,
   TSchema as TypeSchema,
-} from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.25.24/typebox.d.ts'
+} from 'https://cdn.jsdelivr.net/npm/@sinclair/typebox@0.27.1/typebox.d.ts'
